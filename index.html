@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">HAPPINDEX</div>
+                <div class="sidebar-brand-text mx-3">HAPPyNDEX</div>
             </a>
 
             <!-- Divider -->
@@ -388,7 +388,7 @@
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
                                                         <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            style="width: 10%" aria-valuenow="50" aria-valuemin="0"
                                                             aria-valuemax="100"></div>
                                                     </div>
                                                 </div>
@@ -414,7 +414,7 @@
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
                                                         <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            style="width: 60%" aria-valuenow="50" aria-valuemin="0"
                                                             aria-valuemax="100"></div>
                                                     </div>
                                                 </div>
@@ -441,7 +441,7 @@
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
                                                         <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            style="width: 6%" aria-valuenow="50" aria-valuemin="0"
                                                             aria-valuemax="100"></div>
                                                     </div>
                                                 </div>
@@ -468,7 +468,7 @@
                                                     <div class="col">
                                                         <div class="progress progress-sm mr-2">
                                                             <div class="progress-bar bg-info" role="progressbar"
-                                                                style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                                style="width: 6%" aria-valuenow="50" aria-valuemin="0"
                                                                 aria-valuemax="100"></div>
                                                         </div>
                                                     </div>
@@ -613,7 +613,7 @@
                             <!-- Illustrations -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Live Downloads Counter</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Live Downloads Counter - Mentor</h6>
                                 </div>
                                 <div class="card-body">
                                     <!-- <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
@@ -621,7 +621,33 @@
                                         custom components and custom utility classes.</p>
                                     <p class="mb-0">Before working with this theme, you should become familiar with the
                                         Bootstrap framework, especially the utility classes.</p> -->
-                                    <div style="text-align: center; font-size: 2rem;">1202</div>
+                                    <div style="text-align: center; font-size: 2rem;" id="counter-men">880</div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Live Downloads Counter - Parent</h6>
+                                </div>
+                                <div class="card-body">
+                                    <!-- <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
+                                        CSS bloat and poor page performance. Custom CSS classes are used to create
+                                        custom components and custom utility classes.</p>
+                                    <p class="mb-0">Before working with this theme, you should become familiar with the
+                                        Bootstrap framework, especially the utility classes.</p> -->
+                                    <div style="text-align: center; font-size: 2rem;" id="counter-par">1202</div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Live Downloads Counter - Student</h6>
+                                </div>
+                                <div class="card-body">
+                                    <!-- <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
+                                        CSS bloat and poor page performance. Custom CSS classes are used to create
+                                        custom components and custom utility classes.</p>
+                                    <p class="mb-0">Before working with this theme, you should become familiar with the
+                                        Bootstrap framework, especially the utility classes.</p> -->
+                                    <div style="text-align: center; font-size: 2rem;" id="counter-stu">2206</div>
                                 </div>
                             </div>
 
@@ -654,7 +680,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; HAPPyNDEX</span>
                     </div>
                 </div>
             </footer>
@@ -707,6 +733,49 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script>
+        var num = 1202;
+        var num2 = 2206;
+        var num3 = 880;
+        var count = 0;
+        setInterval(() => {
+            document.getElementById('counter-par').innerText = num;
+            if(count == 7){
+                num--;
+                count = 0;
+            }
+            else{
+                num++;
+                count++;
+            }
+
+        }, 1000);
+        setInterval(() => {
+            document.getElementById('counter-stu').innerText = num2;
+            if(count == 7){
+                num2--;
+                count = 0;
+            }
+            else{
+                num2++;
+                count++;
+            }
+
+        }, 1500);
+        setInterval(() => {
+            document.getElementById('counter-men').innerText = num3;
+            if(count == 7){
+                num3--;
+                count = 0;
+            }
+            else{
+                num3++;
+                count++;
+            }
+
+        }, 2000);
+    </script>
 
 </body>
 
